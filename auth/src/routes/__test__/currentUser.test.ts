@@ -15,6 +15,7 @@ it('Returns information about the user', async () => {
         .send()
         .expect(401);
 
+    //comment
     //expect should be using 200, but was replaced to 401 to test pull request
     //expect(response.body.currentUser.email).toEqual('email@email.com');
 });
