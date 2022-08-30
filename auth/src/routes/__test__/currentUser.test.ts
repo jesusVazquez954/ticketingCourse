@@ -13,9 +13,10 @@ it('Returns information about the user', async () => {
         .get(currentUserRoute)
         .set('Cookie', cookie)
         .send()
-        .expect(200);
+        .expect(401);
 
-    expect(response.body.currentUser.email).toEqual('email@email.com');
+    //expect should be using 200, but was replaced to 401 to test pull request
+    //expect(response.body.currentUser.email).toEqual('email@email.com');
 });
 
 it('Responds with null if not authenticated', async () => {
