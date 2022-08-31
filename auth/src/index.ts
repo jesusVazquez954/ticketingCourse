@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 const start = async () => {
     console.log('====================================');
     console.log("Running auth...");
+
     console.log('====================================');
     if (!process.env.JWT_KEY) {
         throw new Error('JWT_TOKEN is not defined');
