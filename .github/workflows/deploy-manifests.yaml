@@ -18,4 +18,4 @@ jobs:
       - run: doctl kubernetes cluster kubeconfig save ticketing
       - run: kubectl rollout restart deployment auth-deployment
       - run: kubectl apply -f infrastructure/k8s && kubectl apply -f infrastructure/k8s-prod
-          
+           
