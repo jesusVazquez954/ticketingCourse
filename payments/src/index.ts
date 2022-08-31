@@ -27,7 +27,7 @@ const start = async () => {
         throw new Error('NATS_CLUSTER_ID is not defined');
     }
 
-    try {
+    try { 
         await natsWrapper.connect(
             process.env.NATS_CLUSTER_ID,
             process.env.NATS_CLIENT_ID,
